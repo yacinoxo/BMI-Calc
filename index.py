@@ -18,7 +18,7 @@ def Home():
             bmi = round(weight / ((height / 100)**2), 2)
             return render_template("index.html", bmi = bmi)
         
-    return './templates/index.html'
+    return render_template("index.html")
     
 
 
