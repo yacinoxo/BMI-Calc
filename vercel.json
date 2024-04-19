@@ -1,14 +1,14 @@
 {
     "builds": [
-      {
-        "src": "api/index.py",
-        "use": "source venv/bin/activate"
-      }
+        {
+            "src":"app.py",
+            "use":"@vercel/python"
+        }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "api/index.py"
-      }
+        {
+            "src":"/(.*)", 
+            "dest":"app.py"
+        }
     ]
-  }
+}
